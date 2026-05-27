@@ -16,5 +16,25 @@ namespace Componentes_PictureBox
         {
             InitializeComponent();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.icon;
+
+            if(checkBox1.Checked == false)
+            {
+                pictureBox1.Image = null;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBox2.Image = Properties.Resources.icon__1_;
+
+            if(checkBox2.Checked == false)
+            {
+                pictureBox2.Image = null;
+            }
+        }
     }
 }
