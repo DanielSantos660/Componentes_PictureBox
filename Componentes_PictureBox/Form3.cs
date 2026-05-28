@@ -36,5 +36,19 @@ namespace Componentes_PictureBox
                 pictureBox2.Image = null;
             }
         }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            pictureBox3.Image = Properties.Resources.icon__2_;
+            if(checkBox3.Checked == false)
+            {
+                pictureBox3.Image = null;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
